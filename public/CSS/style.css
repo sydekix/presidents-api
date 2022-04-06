@@ -1,0 +1,22 @@
+.nav {
+    background-color: red;
+    margin-bottom: 0px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: blue;
+}
+
+.header {
+    padding: 0;
+}
+
+h1 {
+    margin: 25px 0;
+}
+
+footer {
+    margin-top: 200px;
+    padding: 0;
+}

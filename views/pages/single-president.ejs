@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+    <main class="main container">
+        <div class="row">
+            <h2 class="col-12"><%= name %></h2>
+            <section class="section row">
+                <figure class="figure col-10">
+                    <img src="<%= data.photo %>" alt="<%= data.name %>" class="img-fluid">
+                    <figcaption><%= data.name %></figcaption>
+                    <figcaption>Order: <%= data.ordinal %></figcaption>
+                    <figcaption>Years in Office: <%= data.yearsInOffice %></figcaption>
+                    <figcaption>Vice-Presidents: <%= data.vicePresidents %></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+<%- include('../partials/footer') %>

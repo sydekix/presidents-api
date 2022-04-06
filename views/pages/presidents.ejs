@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+    <main class="main container">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-4">
+                    <a href="/presidents/<%= item.id %>">
+                        <h2><%= item.name %></h2>
+                        <img class="img-fluid" src="<%= item.photo %>" alt="<%= item.name %>">
+                        <p>Order: <%= item.ordinal %></p>
+                        <p>Years in Office: <%= item.yearsInOffice %></p>
+                        <p>Vice-Presidents: <%= item.vicePresidents %></p>
+                    </a>
+                </div>
+           <% }) %>
+        </div>
+    </main>
+<%- include('../partials/footer') %>
